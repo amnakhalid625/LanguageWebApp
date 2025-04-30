@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../assets/images/logo.png'
+import { Home, ShoppingBag, CreditCard, Info, Phone, Menu, X } from 'lucide-react'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,20 +22,25 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-blue-600 font-medium hover:text-blue-800 transition-colors duration-200">
-              Home
+            <a href="#" className="flex items-center space-x-2 text-blue-600 font-medium hover:text-blue-800 transition-colors duration-200">
+              <Home size={18} />
+              <span>Home</span>
             </a>
-            <a href="#" className="text-gray-700 font-medium hover:text-blue-600 transition-colors duration-200">
-              Services
+            <a href="#" className="flex items-center space-x-2 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-200">
+              <ShoppingBag size={18} />
+              <span>Services</span>
             </a>
-            <a href="#" className="text-gray-700 font-medium hover:text-blue-600 transition-colors duration-200">
-              Pricing
+            <a href="#" className="flex items-center space-x-2 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-200">
+              <CreditCard size={18} />
+              <span>Pricing</span>
             </a>
-            <a href="#" className="text-gray-700 font-medium hover:text-blue-600 transition-colors duration-200">
-              About
+            <a href="#" className="flex items-center space-x-2 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-200">
+              <Info size={18} />
+              <span>About</span>
             </a>
-            <a href="#" className="text-gray-700 font-medium hover:text-blue-600 transition-colors duration-200">
-              Contact
+            <a href="#" className="flex items-center space-x-2 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-200">
+              <Phone size={18} />
+              <span>Contact</span>
             </a>
           </div>
           
@@ -46,13 +52,9 @@ const Navbar = () => {
             >
               <span className="sr-only">Open main menu</span>
               {!isMenuOpen ? (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                <Menu className="h-6 w-6" />
               ) : (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <X className="h-6 w-6" />
               )}
             </button>
           </div>
@@ -63,20 +65,25 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-gray-50">
-              Home
+            <a href="#" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-gray-50">
+              <Home size={18} />
+              <span>Home</span>
             </a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
-              Services
+            <a href="#" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+              <ShoppingBag size={18} />
+              <span>Services</span>
             </a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
-              Pricing
+            <a href="#" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+              <CreditCard size={18} />
+              <span>Pricing</span>
             </a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
-              About
+            <a href="#" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+              <Info size={18} />
+              <span>About</span>
             </a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
-              Contact
+            <a href="#" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+              <Phone size={18} />
+              <span>Contact</span>
             </a>
           </div>
         </div>

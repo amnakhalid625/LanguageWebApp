@@ -15,9 +15,10 @@ export default {
         xlarge: "1536px",
       },
       colors: {
-      primary: "#00555A",
+      primary: "#FE5F1B",
       secondary: "#BBA04E",
-      background: "#F9FAFB",
+      hoverColor:'#e54501',
+      background: "#F6F4EF",
       text: "#ffffff",
       secondaryText:'#000000',
       border: "#DDDDDD",

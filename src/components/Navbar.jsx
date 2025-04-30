@@ -28,11 +28,11 @@ const Navbar = () => {
             </a>
             <a href="#" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <ShoppingBag size={18} />
-              <span>Services</span>
+              <span>Our Courses</span>
             </a>
             <a href="#" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <CreditCard size={18} />
-              <span>Pricing</span>
+              <span>Mentor</span>
             </a>
             <a href="#" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <Info size={18} />
@@ -71,11 +71,11 @@ const Navbar = () => {
             </a>
             <a href="#" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <ShoppingBag size={18} />
-              <span>Services</span>
+              <span>Our Courses</span>
             </a>
             <a href="#" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <CreditCard size={18} />
-              <span>Pricing</span>
+              <span>Mentors</span>
             </a>
             <a href="#" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <Info size={18} />

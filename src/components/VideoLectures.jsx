@@ -50,7 +50,7 @@ const VideoLectures = () => {
             <span className="text-orange-600">RECORDED LECTURES</span> LIBRARY
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Access premium video lectures from University of the Punjab & Hallmark Education professors anytime
+            Access video lectures from University of the Punjab & Hallmark Education professors anytime
           </p>
         </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import studentImg from '../assets/images/main-img.png';
 import Card from '../components/Card';
 import Courses from '../components/Courses';
+import VideoLectures from '../components/VideoLectures';
 
 const Hero = () => {
   return (
@@ -58,6 +59,7 @@ const Hero = () => {
 
 <Card />
 <Courses />
+<VideoLectures />
 
     </>
   );

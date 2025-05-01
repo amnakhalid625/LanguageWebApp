@@ -31,7 +31,7 @@ const Card = () => {
 
   return (
     <div className="text-center py-16 px-4">
-      <p className="text-sm text-blue-500 font-semibold uppercase mb-2">In 4 Easy Steps</p>
+      <p className="text-sm text-primary font-semibold uppercase mb-2">In 4 Easy Steps</p>
       <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10">
         How to Learn with LangLab<br />
         <span className="font-semibold">Your structured language journey</span>

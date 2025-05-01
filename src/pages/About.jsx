@@ -3,7 +3,7 @@ import aboutImg from '../assets/images/banner.png';
 
 const About = () => {
   return (
-    <section className="bg-white py-16 px-6 lg:px-20 font-sans">
+    <section className="bg-white py-16 px-6 lg:px-20 ">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -19,7 +19,7 @@ const About = () => {
               src={aboutImg} 
               alt="About eLearning Platform" 
               className="w-full h-auto rounded-lg object-cover"
-              style={{ maxHeight: '500px' }}
+              style={{ maxHeight: '700px' }}
             />
           </div>
 

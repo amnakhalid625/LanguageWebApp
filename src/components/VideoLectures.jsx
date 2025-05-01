@@ -10,25 +10,25 @@ const VideoLectures = () => {
       language: 'English',
       levels: ['Spoken English', 'IELTS Preparation'],
       thumbnail: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-      videoUrl: 'https://example.com/english-lecture.mp4' // Replace with actual video URL
+      videoUrl: 'https://www.facebook.com/reel/1110585623519139' 
     },
     {
       language: 'German (A1-C1)',
       levels: ['Goethe Exam Prep', 'Conversation Practice'],
       thumbnail: 'https://images.unsplash.com/photo-1551590192-8070a16d9f67?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-      videoUrl: 'https://example.com/german-lecture.mp4' // Replace with actual video URL
+      videoUrl: 'https://www.facebook.com/reel/1389248291900338' 
     },
     {
       language: 'Chinese (HSK)',
       levels: ['Character Writing', 'HSK Test Prep'],
       thumbnail: 'https://media.istockphoto.com/id/1441562506/vector/happy-chinese-new-year-invitation-or-greeting-card-design-with-swallow-and-peony-flower.jpg?s=1024x1024&w=is&k=20&c=-qJ1ToMouWM0BCMspXk-x3c8_aXBhlJkznu_JbFPbh0=',
-      videoUrl: 'https://example.com/chinese-lecture.mp4' // Replace with actual video URL
+      videoUrl: 'https://example.com/chinese-lecture.mp4'
     },
     {
       language: 'French (A1-B2)',
       levels: ['DELF Prep', 'Pronunciation'],
       thumbnail: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-      videoUrl: 'https://example.com/french-lecture.mp4' // Replace with actual video URL
+      videoUrl: 'https://example.com/french-lecture.mp4'
     }
   ];
 
@@ -104,14 +104,31 @@ const VideoLectures = () => {
               >
                 <FaTimes />
               </button>
-              <video 
-                controls 
-                autoPlay 
-                className="w-full"
-                src={selectedVideo.videoUrl}
-              >
-                Your browser does not support the video tag.
-              </video>
+              
+              <div className="w-full">
+                {selectedVideo.videoUrl.includes('facebook.com') ? (
+                  <iframe
+                    src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(selectedVideo.videoUrl)}`}
+                    width="100%"
+                    height="400"
+                    style={{ border: 'none', overflow: 'hidden' }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                ) : (
+                  <video 
+                    controls 
+                    autoPlay 
+                    className="w-full"
+                    src={selectedVideo.videoUrl}
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                )}
+              </div>
+
               <div className="p-4 bg-white">
                 <h3 className="text-xl font-bold text-gray-800">{selectedVideo.language} Lecture</h3>
                 <p className="text-gray-600 mt-1">University of the Punjab & Hallmark Education</p>

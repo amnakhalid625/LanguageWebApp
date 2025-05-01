@@ -58,7 +58,7 @@ const Courses = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             HOME OF LANGUAGES
           </h2>
-          <div className="w-20 h-1.5 bg-orange-500 mx-auto mb-4 rounded-full"></div>
+          <div className="w-20 h-1 bg-primary mx-auto"></div>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
             FROM THE PROFESSORS OF UNIVERSITY OF THE PUNJAB & HALLMARK EDUCATION
           </p>
@@ -72,13 +72,13 @@ const Courses = () => {
               className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
             >
               <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                <span className="w-3 h-3 bg-orange-500 rounded-full mr-3"></span>
+                <span className="w-3 h-3 bg-primary rounded-full mr-3"></span>
                 {language.name} Courses {language.level && `(${language.level})`}
               </h3>
               <ul className="space-y-3">
                 {language.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">
-                    <span className="text-orange-500 mr-3 mt-1">•</span>
+                    <span className="text-primary mr-3 mt-1">•</span>
                     <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}

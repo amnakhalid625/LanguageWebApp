@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../assets/images/logo.png'
+import { Link } from 'react-router-dom'
 import { Home, ShoppingBag, CreditCard, Info, Phone, Menu, X } from 'lucide-react'
 
 const Navbar = () => {
@@ -22,10 +23,10 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="flex items-center space-x-2 text-primary font-semibold hover:text-hoverColor transition-colors duration-200">
+            <Link to="/"   className="flex items-center space-x-2 text-primary font-semibold hover:text-hoverColor transition-colors duration-200">
               <Home size={18} />
               <span>Home</span>
-            </a>
+            </Link>
             <a href="#" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <ShoppingBag size={18} />
               <span>Our Courses</span>

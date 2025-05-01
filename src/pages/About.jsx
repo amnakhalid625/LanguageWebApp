@@ -9,7 +9,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             About Our Platform
           </h2>
-          <div className="w-20 h-1 bg-orange-600 mx-auto"></div>
+          <div className="w-20 h-1 bg-primary mx-auto"></div>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
@@ -36,7 +36,7 @@ const About = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-5 h-5 bg-orange-600 rounded-full"></div>
+                  <div className="w-5 h-5 bg-primary rounded-full"></div>
                 </div>
                 <p className="ml-3 text-gray-700">
                   Unique intellectual capital deployment
@@ -45,7 +45,7 @@ const About = () => {
               
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-5 h-5 bg-orange-600 rounded-full"></div>
+                  <div className="w-5 h-5 bg-primary rounded-full"></div>
                 </div>
                 <p className="ml-3 text-gray-700">
                   Enterprise-level synergy solutions
@@ -54,7 +54,7 @@ const About = () => {
               
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-5 h-5 bg-orange-600 rounded-full"></div>
+                  <div className="w-5 h-5 bg-primary rounded-full"></div>
                 </div>
                 <p className="ml-3 text-gray-700">
                   Intuitive learning revolution
@@ -62,7 +62,7 @@ const About = () => {
               </div>
             </div>
 
-            <button className="mt-8 bg-orange-600 text-white font-semibold px-6 py-3 rounded hover:bg-orange-700 transition">
+            <button className="mt-8 bg-primary text-white font-semibold px-6 py-3 rounded hover:bg-orange-700 transition">
               Learn More
             </button>
           </div>

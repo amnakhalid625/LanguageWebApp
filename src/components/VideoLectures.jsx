@@ -47,7 +47,7 @@ const VideoLectures = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-            <span className="text-orange-600">RECORDED LECTURES</span> LIBRARY
+            <span className="text-primary">RECORDED LECTURES</span> LIBRARY
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             Access video lectures from University of the Punjab & Hallmark Education professors anytime
@@ -66,7 +66,7 @@ const VideoLectures = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                   <button 
                     onClick={() => handlePlay(course)}
-                    className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white hover:bg-orange-700 transition"
+                    className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white hover:bg-orange-700 transition"
                   >
                     <FaPlay />
                   </button>
@@ -78,7 +78,7 @@ const VideoLectures = () => {
                 <ul className="space-y-2">
                   {course.levels.map((level, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-orange-500 mr-2 mt-1">•</span>
+                      <span className="text-primary mr-2 mt-1">•</span>
                       <span className="text-gray-700">{level}</span>
                     </li>
                   ))}
@@ -89,7 +89,7 @@ const VideoLectures = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="px-8 py-3 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-md shadow transition">
+          <button className="px-8 py-3 bg-primary hover:bg-orange-700 text-white font-medium rounded-md shadow transition">
             View All Lecture Series
           </button>
         </div>

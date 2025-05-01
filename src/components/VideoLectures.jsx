@@ -22,13 +22,13 @@ const VideoLectures = () => {
       language: 'Chinese (HSK)',
       levels: ['Character Writing', 'HSK Test Prep'],
       thumbnail: 'https://media.istockphoto.com/id/1441562506/vector/happy-chinese-new-year-invitation-or-greeting-card-design-with-swallow-and-peony-flower.jpg?s=1024x1024&w=is&k=20&c=-qJ1ToMouWM0BCMspXk-x3c8_aXBhlJkznu_JbFPbh0=',
-      videoUrl: 'https://example.com/chinese-lecture.mp4'
+      videoUrl: 'https://www.facebook.com/reel/1110585623519139'
     },
     {
       language: 'French (A1-B2)',
       levels: ['DELF Prep', 'Pronunciation'],
       thumbnail: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-      videoUrl: 'https://example.com/french-lecture.mp4'
+      videoUrl: 'https://www.facebook.com/reel/1110585623519139'
     }
   ];
 
@@ -96,46 +96,50 @@ const VideoLectures = () => {
 
         {/* Video Modal */}
         {showModal && selectedVideo && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-            <div className="relative w-full max-w-4xl bg-black rounded-lg overflow-hidden">
-              <button 
-                onClick={closeModal}
-                className="absolute top-4 right-4 text-white z-10 bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition"
-              >
-                <FaTimes />
-              </button>
-              
-              <div className="w-full">
-                {selectedVideo.videoUrl.includes('facebook.com') ? (
-                  <iframe
-                    src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(selectedVideo.videoUrl)}`}
-                    width="100%"
-                    height="400"
-                    style={{ border: 'none', overflow: 'hidden' }}
-                    scrolling="no"
-                    frameBorder="0"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                ) : (
-                  <video 
-                    controls 
-                    autoPlay 
-                    className="w-full"
-                    src={selectedVideo.videoUrl}
-                  >
-                    Your browser does not support the video tag.
-                  </video>
-                )}
-              </div>
-
-              <div className="p-4 bg-white">
-                <h3 className="text-xl font-bold text-gray-800">{selectedVideo.language} Lecture</h3>
-                <p className="text-gray-600 mt-1">University of the Punjab & Hallmark Education</p>
-              </div>
-            </div>
+  <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+    <div className="relative bg-black rounded-lg max-w-4xl w-full">
+      <button 
+        onClick={closeModal}
+        className="absolute -top-10 right-0 text-white z-10 hover:text-gray-300 transition p-2"
+      >
+        <FaTimes size={24} />
+      </button>
+      
+      {/* Video Container - Shows Complete Video */}
+      <div className="w-full flex justify-center items-center">
+        {selectedVideo.videoUrl.includes('facebook.com') ? (
+          <div className="w-full" style={{ maxWidth: '640px' }}>
+            <iframe
+              src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(selectedVideo.videoUrl)}&show_text=false&width=640`}
+              width="640"
+              height="360"
+              className="w-full border-0"
+              style={{ aspectRatio: '16/9' }}
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              title={`${selectedVideo.language} Lecture`}
+            ></iframe>
           </div>
+        ) : (
+          <video 
+            controls 
+            autoPlay 
+            className="max-w-full max-h-[80vh]"
+            style={{ aspectRatio: '16/9' }}
+            src={selectedVideo.videoUrl}
+          >
+            Your browser does not support the video tag.
+          </video>
         )}
+      </div>
+
+      <div className="p-4 bg-white">
+        <h3 className="text-lg font-bold text-gray-800">{selectedVideo.language} Lecture</h3>
+        <p className="text-gray-600 text-sm">University of the Punjab & Hallmark Education</p>
+      </div>
+    </div>
+  </div>
+)}
       </div>
     </section>
   );

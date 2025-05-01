@@ -16,9 +16,9 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#" className="flex-shrink-0">
+            <Link to="/"  className="flex-shrink-0">
               <img className="h-10" src={logo} alt="Logo" />
-            </a>
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
@@ -35,10 +35,10 @@ const Navbar = () => {
               <CreditCard size={18} />
               <span>Mentor</span>
             </a>
-            <a href="#" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+            <Link to="/about"  className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <Info size={18} />
               <span>About</span>
-            </a>
+            </Link>
             <a href="#" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <Phone size={18} />
               <span>Contact</span>

@@ -18,7 +18,7 @@ export default {
       primary: "#FE5F1B",
       secondary: "#BBA04E",
       hoverColor:'#e54501',
-      background: "#F6F4EF",
+      background: "#fef3ed",
       text: "#ffffff",
       secondaryText:'#000000',
       border: "#DDDDDD",

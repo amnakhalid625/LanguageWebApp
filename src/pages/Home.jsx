@@ -1,21 +1,24 @@
 import React from 'react';
-import studentImg from '../assets/images/main-img.png'; 
+import studentImg from '../assets/images/main-img.png';
+import Card from '../components/Card';
 
 const Hero = () => {
   return (
+    <>
     <section className="bg-background flex items-center px-6 lg:px-20 font-sans">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
-        
+
         <div className="lg:w-1/2 text-center lg:text-left">
-          <div className="inline-block bg-orange-100 text-orange-600 text-sm font-semibold px-4 py-1 rounded-full mb-4 shadow-sm">
+          <div className="inline-block bg-orange-100 text-primary text-sm font-semibold px-4 py-1 rounded-full mb-4 shadow-sm">
             Language Learning Platform
           </div>
 
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
-            Smart Learning<br />
-            Deeper & More<br />
-            <span className="text-orange-600">-Amazing</span>
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 md:leading-snug">
+            Learn Languages<br />
+            Faster & <span className="text-orange-600 italic">Fluently</span>
           </h1>
+
+
 
           <p className="text-gray-600 mt-4 text-base sm:text-lg max-w-md">
             Unlock your full potential with engaging, intuitive learning tools crafted for serious growth. Join thousands mastering new languages with ease!
@@ -46,10 +49,15 @@ const Hero = () => {
 
 
 
-       
+
         </div>
       </div>
     </section>
+
+
+<Card />
+
+    </>
   );
 };
 

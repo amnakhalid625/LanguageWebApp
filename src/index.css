@@ -7,7 +7,9 @@
 @tailwind utilities;
 
 
-
+*{
+    font-family: "Poppins", sans-serif;
+}
 
 
 body{

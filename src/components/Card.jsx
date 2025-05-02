@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBookOpen, FaKeyboard, FaUserFriends, FaCertificate } from 'react-icons/fa';
+import WhatsAppButton from './WhatsAppButton';
 
 const Card = () => {
   const steps = [
@@ -30,6 +31,7 @@ const Card = () => {
   ];
 
   return (
+    <>
     <div className="text-center py-16 px-4">
       <p className="text-sm text-primary font-semibold uppercase mb-2">In 4 Easy Steps</p>
       <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10">
@@ -49,6 +51,8 @@ const Card = () => {
         ))}
       </div>
     </div>
+    <WhatsAppButton />
+    </>
   );
 };
 

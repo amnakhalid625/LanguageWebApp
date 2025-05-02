@@ -3,7 +3,7 @@ import aboutImg from '../assets/images/banner.png';
 
 const About = () => {
   return (
-    <section className="bg-white py-16 px-6 lg:px-20 ">
+    <section className="bg-white py-16 px-6 lg:px-20 " id='about'>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

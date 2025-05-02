@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../assets/images/logo.png'
 import { Link } from 'react-router-dom'
-import { Home, ShoppingBag, CreditCard, Info, Phone, Menu, X } from 'lucide-react'
+import { Home, ShoppingBag, CreditCard, Info, Phone, Menu, X, Video } from 'lucide-react'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,22 +23,24 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/"   className="flex items-center space-x-2 text-primary font-semibold hover:text-hoverColor transition-colors duration-200">
+            <Link to="/"  className="flex items-center space-x-2 text-primary font-semibold hover:text-hoverColor transition-colors duration-200">
               <Home size={18} />
               <span>Home</span>
             </Link>
-            <a href="#" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+            <a href="#courses" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <ShoppingBag size={18} />
               <span>Our Courses</span>
             </a>
-            <a href="#" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
-              <CreditCard size={18} />
-              <span>Mentor</span>
-            </a>
-            <Link to="/about"  className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+          
+            <a href="#about"  className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <Info size={18} />
               <span>About</span>
-            </Link>
+            </a>
+
+            <a href="#lectures" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+              <Video size={18} />
+              <span>Video Lectures</span>
+            </a>
             <a href="https://wa.me/2348100000000" target='_blank' rel="noreferrer" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <Phone size={18} />
               <span>Contact</span>

@@ -43,7 +43,7 @@ const VideoLectures = () => {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background" id='lectures'>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">

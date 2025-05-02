@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBookOpen, FaKeyboard, FaUserFriends, FaCertificate } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import WhatsAppButton from './WhatsAppButton';
 
 const Card = () => {
@@ -30,28 +31,67 @@ const Card = () => {
     },
   ];
 
+  // Animation Variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <>
-    <div className="text-center py-16 px-4">
-      <p className="text-sm text-primary font-semibold uppercase mb-2">In 4 Easy Steps</p>
-      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10">
-        How to Learn with LangLab<br />
-        <span className="font-semibold">Your structured language journey</span>
-      </h2>
+      <motion.div
+        className="text-center py-16 px-4"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={containerVariants}
+      >
+        <motion.p
+          className="text-sm text-primary font-semibold uppercase mb-2"
+          variants={cardVariants}
+        >
+          In 4 Easy Steps
+        </motion.p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-        {steps.map((step, index) => (
-          <div key={index} className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-            <div className={`w-12 h-12 mx-auto flex items-center justify-center rounded-full ${step.bgColor} mb-4`}>
-              {step.icon}
-            </div>
-            <h3 className="font-semibold text-gray-800 text-lg mb-2">{step.title}</h3>
-            <p className="text-gray-600 text-sm">{step.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-    <WhatsAppButton />
+        <motion.h2
+          className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10"
+          variants={cardVariants}
+        >
+          How to Learn with LangLab<br />
+          <span className="font-semibold">Your structured language journey</span>
+        </motion.h2>
+
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto"
+          variants={containerVariants}
+        >
+          {steps.map((step, index) => (
+            <motion.div
+              key={index}
+              className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition"
+              variants={cardVariants}
+            >
+              <div className={`w-12 h-12 mx-auto flex items-center justify-center rounded-full ${step.bgColor} mb-4`}>
+                {step.icon}
+              </div>
+              <h3 className="font-semibold text-gray-800 text-lg mb-2">{step.title}</h3>
+              <p className="text-gray-600 text-sm">{step.description}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+
+      <WhatsAppButton />
     </>
   );
 };

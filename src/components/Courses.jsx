@@ -1,14 +1,12 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Courses = () => {
   const languages = [
     {
       name: "English",
       level: "",
-      features: [
-        "Spoken English",
-        "IELTS Preparation"
-      ]
+      features: ["Spoken English", "IELTS Preparation"]
     },
     {
       name: "German",
@@ -51,10 +49,16 @@ const Courses = () => {
   ];
 
   return (
-    <section className="py-12 px-6 lg:px-20 bg-gradient-to-b from-gray-50 to-white" id='courses'>
+    <section className="py-12 px-6 lg:px-20 bg-gradient-to-b from-gray-50 to-white" id="courses">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
+        {/* Header with animation */}
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             HOME OF LANGUAGES
           </h2>
@@ -62,14 +66,18 @@ const Courses = () => {
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
             FROM THE PROFESSORS OF UNIVERSITY OF THE PUNJAB & HALLMARK EDUCATION
           </p>
-        </div>
+        </motion.div>
 
-        {/* Language Options */}
+        {/* Language Options with animation */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {languages.map((language, index) => (
-            <div 
+            <motion.div 
               key={index}
               className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
             >
               <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                 <span className="w-3 h-3 bg-primary rounded-full mr-3"></span>
@@ -83,12 +91,18 @@ const Courses = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        {/* Features Banner */}
-        <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white p-8 rounded-xl shadow-lg">
+        {/* Features Banner with animation */}
+        <motion.div 
+          className="bg-gradient-to-r from-orange-500 to-orange-600 text-white p-8 rounded-xl shadow-lg"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <h3 className="text-2xl font-bold mb-6 flex items-center">
             <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -107,7 +121,7 @@ const Courses = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

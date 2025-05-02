@@ -39,7 +39,7 @@ const Navbar = () => {
               <Info size={18} />
               <span>About</span>
             </Link>
-            <a href="#" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+            <a href="https://wa.me/2348100000000" target='_blank' rel="noreferrer" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <Phone size={18} />
               <span>Contact</span>
             </a>

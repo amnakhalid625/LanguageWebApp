@@ -62,9 +62,13 @@ const About = () => {
               </div>
             </div>
 
+
+{/* add pdf to download */}
+<a href="#" download={true}>
             <button className="mt-8 bg-primary text-white font-semibold px-6 py-3 rounded hover:bg-orange-700 transition">
               Learn More
             </button>
+            </a>
           </div>
         </div>
       </div>

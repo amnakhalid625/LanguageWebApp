@@ -7,6 +7,7 @@ import Courses from '../components/Courses';
 import VideoLectures from '../components/VideoLectures';
 import FAQ from '../components/FAQ';
 import Testimonials from '../components/Testimonails';
+import Footer from '../components/Footer';
 
 const Hero = () => {
   return (
@@ -64,6 +65,7 @@ const Hero = () => {
 <VideoLectures />
 <FAQ />
 <Testimonials/>
+<Footer />
 
     </>
   );

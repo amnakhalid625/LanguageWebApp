@@ -37,7 +37,7 @@ const Navbar = () => {
               <span>About</span>
             </a>
 
-            <a href="#lectures" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+            <a href="#video" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <Video size={18} />
               <span>Video Lectures</span>
             </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button 
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-hoverColor hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-hoverColor hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-200"
             >
               <span className="sr-only">Open main menu</span>
               {!isMenuOpen ? (

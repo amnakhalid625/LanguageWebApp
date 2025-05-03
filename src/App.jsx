@@ -2,12 +2,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import About from './pages/About'
+import {  HelmetProvider } from 'react-helmet-async';
+
 
 
 function App() {
 
   return (
    <>
+   <HelmetProvider>
    <BrowserRouter>
    <Navbar />
 
@@ -17,6 +20,7 @@ function App() {
 
     </Routes> 
    </BrowserRouter>
+   </HelmetProvider>
    
    </>
   )

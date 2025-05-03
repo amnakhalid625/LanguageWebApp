@@ -9,10 +9,16 @@ import FAQ from '../components/FAQ';
 import Testimonials from '../components/Testimonails';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
+import { Helmet,  } from 'react-helmet-async';
+
 
 const Hero = () => {
   return (
     <>
+     <Helmet>
+        <title>Language Learning</title>
+        <meta name='description' content='Language Learning Platform' />
+      </Helmet>
     <section className="bg-background py-12 md:py-20 px-6 lg:px-20 font-sans">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-col-reverse lg:flex-row items-center justify-between gap-8 md:gap-12">

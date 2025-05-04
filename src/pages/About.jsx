@@ -1,4 +1,3 @@
-import React from 'react';
 import aboutImg from '../assets/images/banner.png';
 import { motion } from 'framer-motion';
 

@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 
 const testimonials = [
   {
-    name: 'Ahmed Raza',
+    name: 'Hamada Khan',
     title: 'IELTS Student',
     text: 'The IELTS preparation course helped me achieve Band 8. The instructors were knowledgeable and the practice tests mirrored the actual exam perfectly.',
   },
@@ -45,7 +45,7 @@ const Testimonial = () => {
             slidesPerView={1}
             loop={true}
             autoplay={{
-              delay: 5000,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             pagination={{

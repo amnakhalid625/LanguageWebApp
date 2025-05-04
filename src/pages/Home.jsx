@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <>
      <Helmet>
-        <title>Language Learning</title>
+        <title>Languages Learning</title>
         <meta name='description' content='Language Learning Platform' />
       </Helmet>
     <section className="bg-background py-12 md:py-20 px-6 lg:px-20 font-sans">

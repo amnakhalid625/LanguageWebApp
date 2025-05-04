@@ -1,4 +1,3 @@
-import React from 'react';
 import { FiPlay, FiArrowRight } from 'react-icons/fi';
 import studentImg from '../assets/images/main-img.png';
 import Card from '../components/Card';

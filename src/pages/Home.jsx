@@ -9,7 +9,7 @@ import FAQ from '../components/FAQ';
 import Testimonials from '../components/Testimonails';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
-import { Helmet,  } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 
 const Hero = () => {

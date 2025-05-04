@@ -30,7 +30,7 @@ const About = () => {
           />
         </motion.div>
   
-        {/* Right Column - Content with animation */}
+        {/* Right Column  */}
         <motion.div 
           className="lg:w-1/2"
           initial={{ opacity: 0, x: 50 }}
@@ -47,7 +47,7 @@ const About = () => {
           </p>
   
           <div className="space-y-4">
-            {/* Bullet points */}
+            {/*  points */}
             {["Unique intellectual capital deployment", "Enterprise-level synergy solutions", "Intuitive learning revolution"].map((text, i) => (
               <div className="flex items-start" key={i}>
                 <div className="flex-shrink-0 mt-1">

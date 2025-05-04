@@ -71,7 +71,6 @@ const Footer = () => {
             <div className="mb-4 md:mb-0">
               <p className="text-sm">
                 © {new Date().getFullYear()} Hallmark Education · 
-                <Link href="#" className="hover:text-white ml-2">Imprint</Link> · 
                 <Link href="#" className="hover:text-white ml-2">Terms & Conditions</Link> · 
                 <Link href="#" className="hover:text-white ml-2">Privacy Policy</Link>
               </p>

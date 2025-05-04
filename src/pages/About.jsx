@@ -14,7 +14,7 @@ const About = () => {
       </div>
   
       <div className="flex flex-col lg:flex-row gap-12 items-center">
-        {/* Left Column - Image with animation */}
+        {/* Left Column */}
         <motion.div 
           className="lg:w-1/2"
           initial={{ opacity: 0, x: -50 }}

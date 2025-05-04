@@ -58,7 +58,7 @@ const About = () => {
             ))}
           </div>
   
-          {/* PDF download button */}
+          {/* PDF button */}
           <a href="/langlab-brochure.pdf" download>
   <button className="mt-8 bg-primary text-white font-semibold px-6 py-3 rounded hover:bg-orange-700 transition">
     Download LangLab Brochure (PDF)

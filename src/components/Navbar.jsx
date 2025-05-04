@@ -37,7 +37,7 @@ const Navbar = () => {
               <span>About</span>
             </a>
 
-            <a href="#video" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+            <a href="#lectures" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <Video size={18} />
               <span>Video Lectures</span>
             </a>

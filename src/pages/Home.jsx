@@ -104,8 +104,6 @@ const Hero = () => {
         </div>
       </div>
     </section>
-
-
 <Card />
 <About />
 <Courses />
@@ -114,7 +112,7 @@ const Hero = () => {
 <Testimonials/>
 <Footer />
 
-    </>
+</>
   );
 };
 

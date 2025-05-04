@@ -1,7 +1,7 @@
 import { FiPlay, FiArrowRight } from 'react-icons/fi';
 import studentImg from '../assets/images/main-img.png';
 import Card from '../components/Card';
-import About from '../pages/About';
+import About from '../components/About';
 import Courses from '../components/Courses';
 import VideoLectures from '../components/VideoLectures';
 import FAQ from '../components/FAQ';
